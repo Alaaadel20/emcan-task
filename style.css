@@ -110,7 +110,11 @@ header {
 /* --------------------------------------------------------------------- */
 /* hero */
 .section-hero {
-  background-image: url("https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n");
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.65),
+      rgba(34, 34, 34, 0.65)
+    ),
+    url("https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
