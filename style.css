@@ -216,21 +216,32 @@ header {
   background: #191b1d;
   padding: 76px 0;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .courses-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  overflow-x: auto;
-  scrollbar-width: none;
+
+  width: 80%;
+  margin-bottom: 30px;
 }
-.courses-container::webkit-scrollbar {
-  display: none;
+.slide-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
 }
+
 .circle-icon {
   color: #fff;
   font-size: 36px;
+  z-index: 9999;
 }
 .courses-heading {
   color: #fff;
@@ -265,7 +276,7 @@ header {
 .card {
   background: #fff;
   height: 370px;
-  width: 278px;
+  min-width: 278px;
   border-bottom-left-radius: 30px;
   position: relative;
 }
@@ -299,7 +310,7 @@ header {
 .course-price {
   position: absolute;
   text-align: right;
-  right: 16px;
+  right: 27px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -313,7 +324,7 @@ header {
   border: solid 2px #00878f;
   border-radius: 5px;
   position: absolute;
-  left: 16px;
+  left: 25px;
   bottom: 20px;
   display: flex;
   align-items: center;
@@ -342,11 +353,21 @@ header {
   color: #00878f;
   margin-left: 12px;
 }
+.swiper {
+  width: 100%;
+}
+.swiper-slide {
+  max-width: 300px;
+  min-height: 370px;
+}
+.swiper-wrapper {
+  width: 80%;
+}
 /* --------------------------------------------------------------------- */
 /* instructors*/
 .section-instructors {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 3fr;
   gap: 30px;
   margin-top: 40px;
 }
@@ -362,10 +383,14 @@ header {
 .instruct-text p {
   font-size: 22px;
 }
+.wrapper1 {
+  display: flex;
+  justify-content: space-between;
+}
 .instructor-card {
   background: #00878f;
   color: white;
-
+  min-width: 350px;
   padding: 46px;
   border-bottom-left-radius: 80px;
 }
@@ -392,6 +417,7 @@ header {
   font-size: 14px;
   weight: 400;
 }
+
 /* --------------------------------------------------------------------- */
 /* instructor*/
 
@@ -554,8 +580,4 @@ header {
 }
 .lang-icon {
   margin-right: 16px;
-}
-
-.rr {
-  display: flex;
 }
