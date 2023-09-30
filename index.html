@@ -677,8 +677,8 @@
             </div>
           </div>
           <div class="swiper-pagination courses-pagination" id="slider1"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next" id="slider2"></div>
+          <div class="swiper-button-prev" id="slider2"></div>
         </div>
         <!-- <div class="swiper-scrollbar"></div> -->
       </section>
@@ -814,6 +814,10 @@
               </p>
             </div>
           </div>
+
+          <!-- Add Navigation Arrows -->
+          <div class="swiper-button-next" id="slider2"></div>
+          <div class="swiper-button-prev" id="slider2"></div>
         </div>
       </section>
       <section class="section-instructor">
@@ -995,6 +999,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script>
       var swiper = new Swiper("#slider1", {
         slidesPerView: 1,
@@ -1029,6 +1034,28 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+      });
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Your custom script for Swiper initialization -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          // Optional Swiper parameters:
+          slidesPerView: 1,
+          spaceBetween: 10,
+          // Additional parameters...
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
       });
     </script>
   </body>

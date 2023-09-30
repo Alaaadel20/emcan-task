@@ -100,6 +100,13 @@ header {
   width: 74px;
   height: 30px;
   margin-right: 10px;
+  transition: all 0.3s;
+}
+.sign-in-btn:hover {
+  color: #fff;
+  background: #00878f;
+  border: solid 2px transparent;
+  cursor: pointer;
 }
 .globe-btn {
   background: transparent;
@@ -152,19 +159,27 @@ header {
   color: #fff;
 }
 .hero-btn {
-  width: 300px;
+  max-width: 300px;
   height: 60px;
   color: #00878f;
   background: #fff;
   border: solid 2px #00878f;
   border-radius: 5px;
   font-size: 24px;
+  transition: all 0.3s;
+  padding: 12px 24px;
+}
+.hero-btn:hover {
+  color: #fff;
+  background: #00878f;
+  border: solid 2px transparent;
+  cursor: pointer;
 }
 .arrow-left {
   color: #00878f;
   background: #fff;
-  height: 35px;
-  width: 35px;
+  min-height: 35px;
+  min-width: 35px;
   border-radius: 5555px;
   display: flex;
   align-items: center;
@@ -174,8 +189,8 @@ header {
 .arrow-right {
   color: #00878f;
   background: #fff;
-  height: 35px;
-  width: 35px;
+  min-height: 35px;
+  min-width: 35px;
   border-radius: 5555px;
   display: flex;
   align-items: center;
@@ -217,6 +232,13 @@ header {
   border-radius: 5px;
   font-size: 24px;
   font-weight: 700;
+  transition: all 0.3s;
+}
+.subject-btn:hover {
+  color: #fff;
+  background: #00878f;
+  border: solid 2px transparent;
+  cursor: pointer;
 }
 /* --------------------------------------------------------------------- */
 /* courses*/
@@ -342,10 +364,25 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
+.cart-btn:hover {
+  color: #fff;
+  background: #00878f;
+  border: solid 2px transparent;
+  cursor: pointer;
+}
+
 .btn3 {
   background: #00878f;
   color: #fff;
+  transition: all 0.3s;
+}
+.btn3:hover {
+  background: #fff;
+  color: #00878f;
+  border: solid 2px #00878f;
+  cursor: pointer;
 }
 
 .course-details {
@@ -450,6 +487,7 @@ header {
 .instructor-text-box {
   margin-left: 100px;
   text-align: center;
+  min-width: 720px;
 }
 .instructor-text-box h3 {
   font-size: 48px;
@@ -475,6 +513,13 @@ header {
   font-size: 24px;
   display: inline-block;
   margin: 0 auto;
+  transition: all 0.3s;
+}
+.instructor-text-box button:hover {
+  color: #00878f;
+  background: #fff;
+  border: solid 2px #00878f;
+  cursor: pointer;
 }
 /* --------------------------------------------------------------------- */
 /* testimonials*/
@@ -505,7 +550,7 @@ header {
   display: flex;
   gap: 30px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-
+  min-width: 450px;
   padding: 30px;
 }
 
@@ -593,4 +638,32 @@ header {
 }
 .lang-icon {
   margin-right: 16px;
+}
+/* ///////////////////////////////////////////////////////////// */
+/* queries */
+@media only screen and (max-width: 1200px) {
+  .hero-heading {
+    font-size: 32px;
+  }
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-heading {
+    font-size: 24px;
+  }
+  .hero-text {
+    font-size: 14px;
+  }
 }
