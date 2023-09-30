@@ -18,28 +18,30 @@
       <a href="#">
         <img class="logo" alt="Zaheen logo" src="imgs/png-logo 1.png" />
       </a>
-      <div class="search-container">
-        <label>Subjects</label>
-        <ion-icon name="search-outline" class="search-icon"></ion-icon>
-        <input
-          type="text"
-          placeholder="search for anything"
-          class="search-input"
-        />
+      <div class="nav-container">
+        <div class="search-container">
+          <label>Subjects</label>
+          <ion-icon name="search-outline" class="search-icon"></ion-icon>
+          <input
+            type="text"
+            placeholder="search for anything"
+            class="search-input"
+          />
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link">Teach on Zaheen</a></li>
+            <li><a class="main-nav-link">Contact Us</a></li>
+          </ul>
+          <a class="cart"
+            ><ion-icon name="cart-outline" class="cart-icon"></ion-icon
+          ></a>
+          <button class="sign-in-btn">Sign In</button>
+          <button class="globe-btn">
+            <ion-icon name="globe-outline" class="globe-icon"></ion-icon>
+          </button>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link">Teach on Zaheen</a></li>
-          <li><a class="main-nav-link">Contact Us</a></li>
-        </ul>
-        <a class="cart"
-          ><ion-icon name="cart-outline" class="cart-icon"></ion-icon
-        ></a>
-        <button class="sign-in-btn">Sign In</button>
-        <button class="globe-btn">
-          <ion-icon name="globe-outline" class="globe-icon"></ion-icon>
-        </button>
-      </nav>
     </header>
     <main>
       <section class="section-hero">
@@ -89,115 +91,596 @@
           <button class="page">4</button>
           <button class="page2">VIEW ALL >></button>
         </div>
-        <!-- <button class="slide-btn" id="prev-slide">
-          <ion-icon
-            class="circle-icon"
-            name="chevron-back-circle-outline"
-          ></ion-icon>
-        </button> -->
-        <div class="swiper mySwiper" id="slider1">
-          <div class="swiper-wrapper courses-container">
-            <div class="swiper-slide card">
-              <div class="img-box">
-                <img src="./imgs//Image.jpg" />
-              </div>
-              <div class="text-box">
-                <p class="course-title">
-                  Science and Machine Learning Bootcamp
-                </p>
-                <div class="course-details">
-                  <img src="./imgs/Ellipse 30.png" alt="instructor" />
-                  <p class="instructor-name">
-                    Ahmed Kamel
-                    <span> <ion-icon name="time" class="time"></ion-icon></span>
-                    <span>4 monts</span>
-                    <span><ion-icon name="star" class="star"></ion-icon></span>
-                    <span>4.5</span>
-                  </p>
+        <div class="cont">
+          <div class="swiper mySwiper courses-swiper" id="slider1">
+            <div class="swiper-wrapper courses-container">
+              <div class="swiper-slide card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
                 </div>
-                <p class="course-price">25.00 SAR</p>
-                <button class="cart-btn">
-                  <ion-icon name="cart" class="cart-icon"></ion-icon>Add to Cart
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide card card2">
-              <div class="img-box">
-                <img src="./imgs/Image.png" />
-              </div>
-              <div class="text-box">
-                <p class="course-title">
-                  Science and Machine Learning Bootcamp
-                </p>
-                <div class="course-details">
-                  <img src="./imgs/Ellipse 31.png" alt="instructor" />
-                  <p class="instructor-name">
-                    Sara Kamel
-                    <span> <ion-icon name="time" class="time"></ion-icon></span>
-                    <span>4 monts</span>
-                    <span><ion-icon name="star" class="star"></ion-icon></span>
-                    <span>4.5</span>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
                   </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
                 </div>
-                <p class="course-price">25.00 SAR</p>
-                <button class="cart-btn">
-                  <ion-icon name="cart" class="cart-icon"></ion-icon>Add to Cart
-                </button>
               </div>
-            </div>
-            <div class="swiper-slide card card3">
-              <div class="img-box">
-                <img src="./imgs/1.png" />
-              </div>
-              <div class="text-box">
-                <p class="course-title">
-                  Science and Machine Learning Bootcamp
-                </p>
-                <div class="course-details">
-                  <img src="./imgs/Ellipse 31.png" alt="instructor" />
-                  <p class="instructor-name">
-                    Sara Kamel
-                    <span> <ion-icon name="time" class="time"></ion-icon></span>
-                    <span>4 monts</span>
-                    <span><ion-icon name="star" class="star"></ion-icon></span>
-                    <span>4.5</span>
+              <div class="swiper-slide card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
                   </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
                 </div>
-                <p class="course-price">25.00 SAR</p>
-                <button class="cart-btn btn3">
-                  <ion-icon name="cart" class="cart-icon"></ion-icon>Add to Cart
-                </button>
               </div>
-            </div>
-            <div class="swiper-slide card card4">
-              <div class="img-box">
-                <img src="./imgs//Image2.png" />
-              </div>
-              <div class="text-box">
-                <p class="course-title">
-                  Science and Machine Learning Bootcamp
-                </p>
-                <div class="course-details">
-                  <img src="./imgs/Ellipse 30.png" alt="instructor" />
-                  <p class="instructor-name">
-                    Ahmed Kamel
-                    <span> <ion-icon name="time" class="time"></ion-icon></span>
-                    <span>4 monts</span>
-                    <span><ion-icon name="star" class="star"></ion-icon></span>
-                    <span>4.5</span>
+              <div class="swiper-slide card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
                   </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
                 </div>
-                <p class="course-price">25.00 SAR</p>
-                <button class="cart-btn">
-                  <ion-icon name="cart" class="cart-icon"></ion-icon>Add to Cart
-                </button>
+              </div>
+              <div class="swiper-slide card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <div class="swiper-pagination courses-pagination" id="slider1"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-scrollbar"></div> -->
       </section>
       <section class="section-instructors">
         <div class="instruct-text">
@@ -523,8 +1006,8 @@
         },
         breakpoints: {
           769: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
           },
         },
         scrollbar: {
