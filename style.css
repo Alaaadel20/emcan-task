@@ -657,13 +657,25 @@ header {
   }
 }
 @media only screen and (max-width: 600px) {
+  .section-hero {
+    background-size: 30%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
+  .content {
+    gap: 20px;
+  }
   .hero-heading {
     font-size: 24px;
   }
   .hero-text {
     font-size: 14px;
+  }
+  .arrow-left {
+    margin-left: 10px;
+  }
+  .arrow-right {
+    margin-right: 10px;
   }
 }
