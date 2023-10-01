@@ -41,6 +41,10 @@
             <ion-icon name="globe-outline" class="globe-icon"></ion-icon>
           </button>
         </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
     </header>
     <main>
@@ -89,7 +93,7 @@
           <button class="page">2</button>
           <button class="page">3</button>
           <button class="page">4</button>
-          <button class="page2">VIEW ALL >></button>
+          <button class="page2">VIEW ALL</button>
         </div>
         <div class="cont">
           <div class="swiper mySwiper courses-swiper" id="slider1">
@@ -682,6 +686,7 @@
         </div>
         <!-- <div class="swiper-scrollbar"></div> -->
       </section>
+
       <section class="section-instructors">
         <div class="instruct-text">
           <h3>Instructors who have achieved the career you want.</h3>
@@ -691,7 +696,7 @@
             ad minim veniam.
           </p>
         </div>
-        <div class="swiper mySwiper content1" id="slider2">
+        <div class="swiper-container content1" id="slider2">
           <div class="swiper-wrapper wrapper1">
             <div class="swiper-slide instructor-card">
               <div class="instruct-details">
@@ -813,11 +818,13 @@
                 and animations to make sure everything is easy to understand.
               </p>
             </div>
+            <!-- Add more slides as needed -->
           </div>
-
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
           <!-- Add Navigation Arrows -->
-          <div class="swiper-button-next" id="slider2"></div>
-          <div class="swiper-button-prev" id="slider2"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </section>
       <section class="section-instructor">
@@ -945,8 +952,10 @@
     </main>
     <footer class="section-footer">
       <div class="footer-container">
-        <div class="logo">
-          <a><img src="./imgs//png-logo 1.png" alt="logo" /></a>
+        <div class="footer-logo">
+          <a
+            ><img src="./imgs//png-logo 1.png" class="footer-img" alt="logo"
+          /></a>
           <p class="text">
             Our website to fulfill customer demand by making them satisfied with
             growing their Knowledge.
@@ -999,7 +1008,27 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Your custom script for Swiper initialization -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          // Optional Swiper parameters:
+          slidesPerView: 1,
+          spaceBetween: 10,
+          // Additional parameters...
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
     <script>
       var swiper = new Swiper("#slider1", {
         slidesPerView: 1,
@@ -1034,28 +1063,6 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-      });
-    </script>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Your custom script for Swiper initialization -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var mySwiper = new Swiper(".swiper-container", {
-          // Optional Swiper parameters:
-          slidesPerView: 1,
-          spaceBetween: 10,
-          // Additional parameters...
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
       });
     </script>
   </body>
