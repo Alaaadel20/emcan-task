@@ -680,9 +680,11 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination courses-pagination" id="slider1"></div>
-          <div class="swiper-button-next" id="slider2"></div>
-          <div class="swiper-button-prev" id="slider2"></div>
+          <div
+            class="swiper-pagination swiper-pagination-1 courses-pagination"
+          ></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
         <!-- <div class="swiper-scrollbar"></div> -->
       </section>
@@ -821,10 +823,10 @@
             <!-- Add more slides as needed -->
           </div>
           <!-- Add Pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-pagination swiper-pagination-2"></div>
           <!-- Add Navigation Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
         </div>
       </section>
       <section class="section-instructor">
@@ -949,6 +951,24 @@
           </div>
         </div>
       </section>
+      <div class="section-testimonials-slider">
+        <div class="swiper mySwiper1 slider3" id="slider3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination swiper-pagination-3"></div>
+        </div>
+      </div>
     </main>
     <footer class="section-footer">
       <div class="footer-container">
@@ -1018,10 +1038,10 @@
           slidesPerView: 1,
           spaceBetween: 10,
           // Additional parameters...
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+          // navigation: {
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -1029,9 +1049,10 @@
         });
       });
     </script>
+
     <script>
-      var swiper = new Swiper("#slider1", {
-        slidesPerView: 1,
+      var swiper1 = new Swiper("#slider1", {
+        slidesPerView: 6,
         centeredSlides: false,
         slidesPerGroupSkip: 1,
         grabCursor: true,
@@ -1052,18 +1073,32 @@
           prevEl: ".swiper-button-prev",
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: ".swiper-pagination-1",
           clickable: true,
         },
       });
-      var swiper = new Swiper("#slider2", {
-        slidesPerView: 3,
+      var swiper3 = new Swiper("#slider3", {
+        slidesPerView: 1,
         spaceBetween: 30,
+        loop: true,
         pagination: {
-          el: ".swiper-pagination",
+          el: ".slider3 .swiper-pagination-3",
           clickable: true,
         },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
       });
+      //   var swiper2 = new Swiper("#slider2", {
+      //     slidesPerView: 3,
+      //     spaceBetween: 30,
+      //     pagination: {
+      //       el: ".swiper-pagination-2",
+      //       clickable: true,
+      //     },
+      //   });
+      //
     </script>
   </body>
 </html>

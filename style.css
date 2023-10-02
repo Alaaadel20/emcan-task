@@ -124,7 +124,7 @@ header {
   background: none;
   cursor: pointer;
 
-  /* display: none; */
+  display: none;
 }
 
 .icon-mobile-nav {
@@ -133,7 +133,7 @@ header {
   color: #00878f;
 }
 .icon-mobile-nav[name="close-outline"] {
-  /* display: none; */
+  display: none;
 }
 
 /* --------------------------------------------------------------------- */
@@ -668,12 +668,7 @@ header {
 @media only screen and (max-width: 1200px) {
   //mobile navigation:
   .btn-mobile-nav {
-    display: block;
-    z-index: 9999;
-  }
-
-  .icon-mobile-nav[name="close-outline"] {
-    display: block;
+    display: block !important;
     z-index: 9999;
   }
 
@@ -713,7 +708,6 @@ header {
     visibility: visible;
     transform: translateX(0);
   }
-
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
   }
@@ -731,6 +725,7 @@ header {
   .main-nav-link:visited {
     font-size: 3rem;
   }
+  /* //////////////////////////////////////////////////////////////////////////////////// */
 
   .hero-heading {
     font-size: 32px;
@@ -841,6 +836,7 @@ header {
     justify-content: center;
   }
   .instructor-img-box {
+    margin: 0 30px;
     width: 80%;
   }
   .subject-boxes {
@@ -919,5 +915,8 @@ header {
   }
   .subject-heading {
     font-size: 36px;
+  }
+  .instructor-img-box {
+    width: 20%;
   }
 }
