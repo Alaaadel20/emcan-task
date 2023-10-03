@@ -8,9 +8,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Zaheen</title>
-
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -33,6 +43,8 @@
             <li><a class="main-nav-link">Teach on Zaheen</a></li>
             <li><a class="main-nav-link">Contact Us</a></li>
           </ul>
+        </nav>
+        <div class="sub-nav">
           <a class="cart"
             ><ion-icon name="cart-outline" class="cart-icon"></ion-icon
           ></a>
@@ -40,12 +52,73 @@
           <button class="globe-btn">
             <ion-icon name="globe-outline" class="globe-icon"></ion-icon>
           </button>
-        </nav>
+        </div>
         <button class="btn-mobile-nav">
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
           <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
       </div>
+    </header>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="section-hero">
@@ -446,250 +519,18 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card">
-                <div class="img-box">
-                  <img src="./imgs//Image.jpg" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Ahmed Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide card card2">
-                <div class="img-box">
-                  <img src="./imgs/Image.png" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Sara Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide card card3">
-                <div class="img-box">
-                  <img src="./imgs/1.png" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Sara Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn btn3">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide card card4">
-                <div class="img-box">
-                  <img src="./imgs//Image2.png" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Ahmed Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide card">
-                <div class="img-box">
-                  <img src="./imgs//Image.jpg" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Ahmed Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide card card2">
-                <div class="img-box">
-                  <img src="./imgs/Image.png" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Sara Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide card card3">
-                <div class="img-box">
-                  <img src="./imgs/1.png" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Sara Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn btn3">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide card card4">
-                <div class="img-box">
-                  <img src="./imgs//Image2.png" />
-                </div>
-                <div class="text-box">
-                  <p class="course-title">
-                    Science and Machine Learning Bootcamp
-                  </p>
-                  <div class="course-details">
-                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
-                    <p class="instructor-name">
-                      Ahmed Kamel
-                      <span>
-                        <ion-icon name="time" class="time"></ion-icon
-                      ></span>
-                      <span>4 monts</span>
-                      <span
-                        ><ion-icon name="star" class="star"></ion-icon
-                      ></span>
-                      <span>4.5</span>
-                    </p>
-                  </div>
-                  <p class="course-price">25.00 SAR</p>
-                  <button class="cart-btn">
-                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
-                    Cart
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
           <div
             class="swiper-pagination swiper-pagination-1 courses-pagination"
           ></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next swiper-button-next-1"></div>
+          <div class="swiper-button-prev swiper-button-prev-1"></div>
         </div>
         <!-- <div class="swiper-scrollbar"></div> -->
       </section>
 
-      <section class="section-instructors">
+      <section class="section-instructors" style="position: relative">
         <div class="instruct-text">
           <h3>Instructors who have achieved the career you want.</h3>
           <p>
@@ -951,24 +792,118 @@
           </div>
         </div>
       </section>
-      <div class="section-testimonials-slider">
-        <div class="swiper mySwiper1 slider3" id="slider3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+      <section class="section-testimonials-slider">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination swiper-pagination-3"></div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="section-footer">
       <div class="footer-container">
@@ -1019,6 +954,7 @@
         </button>
       </div>
     </footer>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -1035,15 +971,15 @@
       document.addEventListener("DOMContentLoaded", function () {
         var mySwiper = new Swiper(".swiper-container", {
           // Optional Swiper parameters:
-          slidesPerView: 1,
-          spaceBetween: 10,
+          slidesPerView: 2,
+          spaceBetween: 30,
           // Additional parameters...
           // navigation: {
           //   nextEl: ".swiper-button-next",
           //   prevEl: ".swiper-button-prev",
           // },
           pagination: {
-            el: ".swiper-pagination",
+            el: ".swiper-pagination-2",
             clickable: true,
           },
         });
@@ -1053,6 +989,7 @@
     <script>
       var swiper1 = new Swiper("#slider1", {
         slidesPerView: 6,
+        loop: true,
         centeredSlides: false,
         slidesPerGroupSkip: 1,
         grabCursor: true,
@@ -1069,8 +1006,8 @@
           el: ".swiper-scrollbar",
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next-1",
+          prevEl: ".swiper-button-prev-1",
         },
         pagination: {
           el: ".swiper-pagination-1",
@@ -1085,19 +1022,19 @@
           el: ".slider3 .swiper-pagination-3",
           clickable: true,
         },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
+        navigation: {
+          nextEl: ".swiper-button-next-3",
+          prevEl: ".swiper-button-prev-3",
+        },
       });
-      //   var swiper2 = new Swiper("#slider2", {
-      //     slidesPerView: 3,
-      //     spaceBetween: 30,
-      //     pagination: {
-      //       el: ".swiper-pagination-2",
-      //       clickable: true,
-      //     },
-      //   });
+      // var swiper2 = new Swiper("#slider2", {
+      //   slidesPerView: 3,
+      //   spaceBetween: 30,
+      //   pagination: {
+      //     el: ".swiper-pagination-2",
+      //     clickable: true,
+      //   },
+      // });
       //
     </script>
   </body>

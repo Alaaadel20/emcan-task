@@ -93,6 +93,11 @@ header {
   left: 30px;
   top: -5px;
 }
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sign-in-btn {
   background: transparent;
   border: solid 2px #00878f;
@@ -236,6 +241,7 @@ header {
 }
 .subject-box img {
   width: 100%;
+  padding: 30px;
 }
 .subject-btn {
   height: 20%;
@@ -491,7 +497,7 @@ header {
 
 .section-instructor {
   margin: 144px 0 72px 0;
-  background: #191b1d;
+
   height: 550px;
 }
 .instructor-container {
@@ -668,8 +674,7 @@ header {
 @media only screen and (max-width: 1200px) {
   //mobile navigation:
   .btn-mobile-nav {
-    display: block !important;
-    z-index: 9999;
+    display: block;
   }
 
   .main-nav {
@@ -700,6 +705,7 @@ header {
 
     /* 3) Hide it from screen readers */
     visibility: hidden;
+    z-index: 9999;
   }
 
   .nav-open .main-nav {
@@ -718,13 +724,15 @@ header {
 
   .main-nav-list {
     flex-direction: column;
-    gap: 4.8rem;
+    gap: 10px;
+    font-size: 48px;
+    transition: all 0.3s;
+  }
+  .main-nav-list li:hover {
+    cursor: pointer;
+    color: #00878f;
   }
 
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 3rem;
-  }
   /* //////////////////////////////////////////////////////////////////////////////////// */
 
   .hero-heading {
@@ -815,11 +823,17 @@ header {
 }
 @media only screen and (max-width: 600px) {
   .section-hero {
-    background-size: 30%;
+    height: 30vh;
+    background-size: 105vh 60vh;
+    background-position: center;
+  }
+
+  .hero-btn {
+    display: none;
   }
   .instruct-text {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-    border-bottom-left-radius: none;
+    border-radius: 10px;
     border-radius: none;
     padding: 60px;
     width: 80%;
@@ -829,6 +843,14 @@ header {
   .instructor-card {
     min-width: 320px;
   }
+  .content1 {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
   .testimonials {
     display: flex;
     flex-direction: column;
@@ -843,7 +865,7 @@ header {
     display: felx;
     /* grid-template-columns: repeat(2, 1fr); */
 
-    gap: 25px;
+    gap: 70px 25px;
   }
   .subject-box {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
