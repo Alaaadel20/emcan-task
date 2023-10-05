@@ -24,7 +24,7 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <a href="#">
         <img class="logo" alt="Zaheen logo" src="imgs/png-logo 1.png" />
       </a>
@@ -58,70 +58,171 @@
           <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
       </div>
-    </header>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    </header> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-mobile">
+      <div class="container-fluid d-flex justify-space-between">
+        <a class="navbar-brand" href="#"
+          ><img class="logo" alt="Zaheen logo" src="imgs/png-logo 1.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex align-items-center w-100 form" role="search">
+          <label class="label">Subjects</label>
+          <ion-icon name="search-outline" class="search-icon"></ion-icon>
+          <input
+            class="form-control me-2 search-input"
+            type="search"
+            aria-label="Search"
+            style="margin-left: 2%"
+          />
+        </form>
+        <div class="d-flex justify-content-center w-100">
+          <div
+            class="sidebar nav-openz"
+            id="navbarSupportedContent"
+            style="flex-grow: 0 !important"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+            <a href="#"
+              ><img
+                class="logo-nav"
+                alt="Zaheen logo"
+                src="imgs/png-logo 1.png"
+            /></a>
+            <!-- <div class="profile">
+              <div class="profile-img-box">
+                <img src="./imgs/Ellipse 11.png" alt="" />
+              </div>
+              <p>Adam Smith</p>
+            </div> -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <span
+                  ><ion-icon name="book-outline" class="nav-icon"></ion-icon
+                ></span>
+                <a class="nav-link" aria-current="page" href="#"
+                  >Teach on Zaheen</a
                 >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <span
+                  ><ion-icon name="mail-outline" class="nav-icon"></ion-icon
+                ></span>
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <span
+                  ><ion-icon
+                    name="cart-outline"
+                    class="nav-icon"
+                  ></ion-icon></span
+                ><a class="nav-link" href="#">Cart</a>
+              </li>
+              <li class="nav-item">
+                <span
+                  ><ion-icon name="log-in-outline" class="nav-icon"></ion-icon
+                ></span>
+                <a class="nav-link" href="#">Sign In</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+
+            <div class="sub-nav">
+              <a class="cart"
+                ><ion-icon name="cart-outline" class="cart-icon"></ion-icon
+              ></a>
+              <button class="sign-in-btn">Sign In</button>
+              <button class="globe-btn">
+                <ion-icon name="globe-outline" class="globe-icon"></ion-icon>
               </button>
-            </form>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid justify-content-space-around">
+        <a class="navbar-brand" href="#"
+          ><img class="logo" alt="Zaheen logo" src="imgs/png-logo 1.png"
+        /></a>
+        <div
+          class="collapse navbar-collapse"
+          style="flex-grow: 0 !important"
+          id="navbarSupportedContent"
+        >
+          <form class="d-flex align-items-center" role="search">
+            <label class="label" style="margin-right: 10px">Subjects</label>
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            <input
+              class="form-control me-2 search-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Teach on Zaheen</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="sub-nav">
+            <a class="cart"
+              ><ion-icon name="cart-outline" class="cart-icon"></ion-icon
+            ></a>
+            <button class="sign-in-btn">Sign In</button>
+            <button class="globe-btn">
+              <ion-icon name="globe-outline" class="globe-icon"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Zaheen logo" src="imgs/png-logo 1.png" />
+      </a>
+      <div class="nav-container">
+        <div class="search-container">
+          <label>Subjects</label>
+          <ion-icon name="search-outline" class="search-icon"></ion-icon>
+          <input
+            type="text"
+            placeholder="search for anything"
+            class="search-input"
+          />
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link">Teach on Zaheen</a></li>
+            <li><a class="main-nav-link">Contact Us</a></li>
+          </ul>
+          <a class="cart"
+            ><ion-icon name="cart-outline" class="cart-icon"></ion-icon
+          ></a>
+          <button class="sign-in-btn">Sign In</button>
+          <button class="globe-btn">
+            <ion-icon name="globe-outline" class="globe-icon"></ion-icon>
+          </button>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="section-hero">
+      <!-- <section class="section-hero">
         <a class="arrow-left"
           ><ion-icon name="chevron-back-outline"></ion-icon
         ></a>
@@ -133,7 +234,155 @@
         <a class="arrow-right"
           ><ion-icon name="chevron-forward-outline"></ion-icon
         ></a>
+      </section> -->
+      <section class="hero-1" style="margin-inline: 25px; position: relative">
+        <div id="carouselExampleCaptions" class="carousel slide hero-slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="content">
+            <h1 class="hero-heading">Start your learning journey with us</h1>
+            <p class="hero-text">Grab The Chances & Invest in your future</p>
+            <button class="hero-btn">Get Started</button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active item-slide"
+              style="
+                background-image: linear-gradient(
+                    rgba(34, 34, 34, 0.65),
+                    rgba(34, 34, 34, 0.65)
+                  ),
+                  url('https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n');
+                background-size: cover !important;
+                background-attachment: fixed;
+                background-position: center;
+                width: 100%;
+                height: 80vh;
+              "
+            >
+              <!-- <img
+                src="https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n"
+                class="d-block w-100"
+                alt="..."
+              /> -->
+              <!-- <div class="carousel-caption d-none d-md-block">
+                <div class="content">
+                  <h1 class="hero-heading">
+                    Start your learning journey with us
+                  </h1>
+                  <p class="hero-text">
+                    Grab The Chances & Invest in your future
+                  </p>
+                  <button class="hero-btn">Get Started</button>
+                </div>
+              </div> -->
+            </div>
+            <div
+              class="carousel-item item-slide"
+              style="
+                background-image: linear-gradient(
+                    rgba(34, 34, 34, 0.65),
+                    rgba(34, 34, 34, 0.65)
+                  ),
+                  url('https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n');
+                background-size: cover !important;
+                background-attachment: fixed;
+                background-position: center;
+                width: 100%;
+                height: 80vh;
+              "
+            >
+              <!-- <img
+                src="https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n"
+                class="d-block w-100"
+                alt="..."
+              /> -->
+              <!-- <div class="carousel-caption d-none d-md-block">
+                <div class="content">
+                  <h1 class="hero-heading">
+                    Start your learning journey with us
+                  </h1>
+                  <p class="hero-text">
+                    Grab The Chances & Invest in your future
+                  </p>
+                  <button class="hero-btn">Get Started</button>
+                </div>
+              </div> -->
+            </div>
+            <div
+              class="carousel-item item-slide"
+              style="
+                background-image: linear-gradient(
+                    rgba(34, 34, 34, 0.65),
+                    rgba(34, 34, 34, 0.65)
+                  ),
+                  url('https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n');
+                background-size: cover !important;
+                background-attachment: fixed;
+                background-position: center;
+                width: 100%;
+                height: 80vh;
+              "
+            >
+              <!-- <img
+                src="https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n"
+                class="d-block w-100"
+                alt="..."
+              /> -->
+              <!-- <div class="carousel-caption d-none d-md-block">
+                <div class="content">
+                  <h1 class="hero-heading">
+                    Start your learning journey with us
+                  </h1>
+                  <p class="hero-text">
+                    Grab The Chances & Invest in your future
+                  </p>
+                  <button class="hero-btn">Get Started</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
+
       <section class="section-subjects">
         <h2 class="subject-heading">Top Subjects</h2>
         <div class="subject-boxes">
@@ -171,7 +420,7 @@
         <div class="cont">
           <div class="swiper mySwiper courses-swiper" id="slider1">
             <div class="swiper-wrapper courses-container">
-              <div class="swiper-slide card">
+              <div class="swiper-slide my-card">
                 <div class="img-box">
                   <img src="./imgs//Image.jpg" />
                 </div>
@@ -200,7 +449,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card2">
+              <div class="swiper-slide my-card card2">
                 <div class="img-box">
                   <img src="./imgs/Image.png" />
                 </div>
@@ -229,7 +478,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card3">
+              <div class="swiper-slide my-card card3">
                 <div class="img-box">
                   <img src="./imgs/1.png" />
                 </div>
@@ -258,7 +507,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card4">
+              <div class="swiper-slide my-card card4">
                 <div class="img-box">
                   <img src="./imgs//Image2.png" />
                 </div>
@@ -287,7 +536,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card">
+              <div class="swiper-slide my-card">
                 <div class="img-box">
                   <img src="./imgs//Image.jpg" />
                 </div>
@@ -316,7 +565,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card2">
+              <div class="swiper-slide my-card card2">
                 <div class="img-box">
                   <img src="./imgs/Image.png" />
                 </div>
@@ -345,7 +594,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card3">
+              <div class="swiper-slide my-card card3">
                 <div class="img-box">
                   <img src="./imgs/1.png" />
                 </div>
@@ -374,7 +623,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card4">
+              <div class="swiper-slide my-card card4">
                 <div class="img-box">
                   <img src="./imgs//Image2.png" />
                 </div>
@@ -403,7 +652,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card">
+              <div class="swiper-slide my-card">
                 <div class="img-box">
                   <img src="./imgs//Image.jpg" />
                 </div>
@@ -432,7 +681,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card2">
+              <div class="swiper-slide my-card card2">
                 <div class="img-box">
                   <img src="./imgs/Image.png" />
                 </div>
@@ -461,7 +710,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card3">
+              <div class="swiper-slide my-card card3">
                 <div class="img-box">
                   <img src="./imgs/1.png" />
                 </div>
@@ -490,7 +739,471 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide card card4">
+              <div class="swiper-slide my-card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card4">
+                <div class="img-box">
+                  <img src="./imgs//Image2.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card">
+                <div class="img-box">
+                  <img src="./imgs//Image.jpg" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Ahmed Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card2">
+                <div class="img-box">
+                  <img src="./imgs/Image.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card3">
+                <div class="img-box">
+                  <img src="./imgs/1.png" />
+                </div>
+                <div class="text-box">
+                  <p class="course-title">
+                    Science and Machine Learning Bootcamp
+                  </p>
+                  <div class="course-details">
+                    <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                    <p class="instructor-name">
+                      Sara Kamel
+                      <span>
+                        <ion-icon name="time" class="time"></ion-icon
+                      ></span>
+                      <span>4 monts</span>
+                      <span
+                        ><ion-icon name="star" class="star"></ion-icon
+                      ></span>
+                      <span>4.5</span>
+                    </p>
+                  </div>
+                  <p class="course-price">25.00 SAR</p>
+                  <button class="cart-btn btn3">
+                    <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                    Cart
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide my-card card4">
                 <div class="img-box">
                   <img src="./imgs//Image2.png" />
                 </div>
@@ -527,9 +1240,10 @@
           <div class="swiper-button-next swiper-button-next-1"></div>
           <div class="swiper-button-prev swiper-button-prev-1"></div>
         </div>
-        <!-- <div class="swiper-scrollbar"></div> -->
       </section>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
 
+      <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
       <section class="section-instructors" style="position: relative">
         <div class="instruct-text">
           <h3>Instructors who have achieved the career you want.</h3>
@@ -670,6 +1384,7 @@
           <div class="swiper-button-prev"></div> -->
         </div>
       </section>
+
       <section class="section-instructor">
         <div class="instructor-container">
           <div class="instructor-img-box">
@@ -802,18 +1517,21 @@
               class="active"
               aria-current="true"
               aria-label="Slide 1"
+              style="background-color: #00878f"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
+              style="background-color: #00878f"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
+              style="background-color: #00878f"
             ></button>
           </div>
           <div class="carousel-inner">
@@ -890,7 +1608,7 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="false"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -988,7 +1706,7 @@
 
     <script>
       var swiper1 = new Swiper("#slider1", {
-        slidesPerView: 6,
+        slidesPerView: 1,
         loop: true,
         centeredSlides: false,
         slidesPerGroupSkip: 1,
@@ -1012,6 +1730,7 @@
         pagination: {
           el: ".swiper-pagination-1",
           clickable: true,
+          dynamicBullets: true,
         },
       });
       var swiper3 = new Swiper("#slider3", {
